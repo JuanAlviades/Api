@@ -17,7 +17,7 @@ $nuevo_Almacen = $_POST['Almacen'];
 // Construir la consulta SQL para la actualización
 $sql = "UPDATE celulares SET Nombre = '$nuevo_Nombre', Marca = '$nuevo_Marca', Almacen = '$nuevo_Almacen' WHERE ID = $ID";
 
-// Ejecutar la consulta
+// En el siguiente código podremos ejecutar el comando para rectificar que funcione todo perfectamente
 if ($conn->query($sql) === TRUE) {
     echo "¡Usuario Actualizado!";
 } else {

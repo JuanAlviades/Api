@@ -13,11 +13,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Obtener datos de la base de datos 
+// Desde esta consulta, simplemente vamos a traer los datos que tengamos en la base de datos
 $sql = "SELECT ID, Nombre, Marca, Almacen FROM celulares";
 $result = $conn->query($sql);
 
-// Si hay resultados, formatearlos como JSON y devolverlos
+// En el siguiente código podremos ejecutar el comando para rectificar que funcione todo perfectamente
 if ($result->num_rows > 0) {
     $users = array();
     while($row = $result->fetch_assoc()) {
